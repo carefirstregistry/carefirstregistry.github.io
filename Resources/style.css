@@ -1,0 +1,289 @@
+html{
+    font-family:'Trebuchet MS', sans-serif;
+}
+
+body{
+    margin:0;
+}
+
+p, h1, h2, h3, ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.274));
+    padding: 1.2rem;
+}
+
+.linklogo{
+    width: 10%;
+}
+
+.linklogo img{
+    width: 100%;
+}
+
+.menuright{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menulist{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-inline-start: 0;
+    width: 75%;
+    font-size: 1.1rem;
+}
+
+.menulist a{
+    text-decoration: none;
+    color: black;
+}
+
+.menulist a:hover{
+    color: #df4040;
+}
+
+.callbutton{
+    width: 11%;
+    padding: .5rem;
+    background-color: #df4040;
+    border:none;
+    border-radius: 5px;
+    font-family:'Trebuchet MS', sans-serif;
+    color:white;
+}
+
+.callbutton:hover{
+    cursor: pointer;
+    background-color: #b11919;
+    transition: background-color .1s ease-out;
+
+}
+
+.menucall{
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+}
+
+.jumbotron{
+    background-image: url("../Resources/HomeImages/Jumbotron/JumbotronImage.png");
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.jumbotrontext{
+    width: 31%;
+}
+
+.jumbotrontext h2{
+    color: white;
+    font-size: 3.2rem;
+    filter:drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.482));
+}
+
+.jumboplaceholder{
+    width: 38%;
+}
+
+.jumbocall{
+    width: 35%;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    padding: .75rem 0;
+    filter:drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.232));
+}
+
+.descrip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 1.5rem auto;
+}
+
+
+h1{
+    font-size: 2.2rem;
+    text-align: center;
+    color:#df4040;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 2rem;
+}
+
+.descrip p{
+    text-align: center;
+
+}
+
+.descripcall{
+    width: 20%;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    padding: .75rem 0;
+    filter:drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.015));
+}
+
+
+.domesticworkers{
+    display: flex;
+    width: 75%;
+    margin: 12rem auto;
+    justify-content: space-around;
+    filter:drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.015));
+}
+
+.domesticimg{
+    width: 30%;
+    border-radius: 10px;
+}
+
+.domestictext{
+    width: 50%;
+}
+
+.domesticrect{
+    height: 5px;
+    width: 40px;
+    background-color: #f9b8b6;
+    margin: 2rem 0;
+}
+
+.domestich2{
+    font-size: 1.8rem;
+}
+
+.clientbubble h3{
+    font-size: 1.75rem;
+    width: 50%;
+}
+
+.map{
+    margin: 10rem auto;
+    border-bottom: 2px solid #f9b8b6;
+    border-top: 2px solid #f9b8b6;
+    width: 65%;
+    padding: 3rem 0;
+    background: radial-gradient(closest-corner, #f7f7f7, #FFF);
+
+}
+
+.midsection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.midrow{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.midtext{
+    text-align: center;
+    font-size: 1.6rem;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.mapimg{
+    width: 45%;
+    border-radius: 15px;
+    filter:drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.015));
+}
+
+.clientimg{
+    width: 12%;
+    border-radius: 250px;
+}
+
+.PagePromo-input {
+    font-size: 1.2rem;
+    font-family: var(--body-font);
+    border: 2px solid #f7a39b95;
+    border-radius: 5px;
+    margin: 2rem 0;
+    padding: .75rem 0 .75rem .5rem;
+}
+
+.ziplookupbotton {
+    margin-left: -.5rem;
+    font-family: var(--body-font);
+    text-align: center;
+    padding: 13px 1.5rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+    border: 1px solid #df40403f;
+    background-color: #f76060;
+}
+
+.ziplookupbotton:hover{
+    background-color: #b11919;
+    cursor: pointer;
+    transition: background-color .1s ease-out;
+}
+
+.buttonandmap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0 0;
+    margin: 0 auto;
+}
+
+.tinyrect{
+    height: 5px;
+    width: 40px;
+    background-color: #f9b8b6;
+    margin: 2rem auto;
+}
+
+.longrect{
+    width: 80px;
+}
+
+.servsection{
+    display: flex;
+    width: 90%;
+    align-items: flex-start;
+    justify-content: center;
+    border: 3px solid #df4040;
+    border-radius: 100px;
+    margin: 12rem auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.043));
+}
+
+.servtitle{
+    font-size: 1.8rem;
+    position: absolute;
+    z-index: 10;
+    margin-top: 1rem;
+    padding: .75re
