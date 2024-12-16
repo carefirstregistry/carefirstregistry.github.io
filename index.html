@@ -40,4 +40,158 @@
 
     <section class="descrip">
         <h1>Care First Registry provides qualified, reliable in-home nursing for seniors and the disabled</h1>
-        <
+        <img class="servheart" src="Resources/Logos/HeartIcon.png">
+        <p> Would you or your loved one prefer to stay living in their own home instead of transitioning to a 
+            nursing home or assisted living facility? As a domestic referral agency, we help connect seniors 
+            with screened RNs and LVNs experienced in providing professional care with non-medical, 
+            in-home care services, at an affordable rate.</p>
+        <button class="callbutton descripcall">Get care</button>
+    </section>
+
+    <section class="domesticworkers">
+        <div class="domestictext">
+            <h2 class="domestich2">Hire nurses quickly and easily</h2>
+            <div class="domesticrect"></div>
+            <p>Care First Registry thoroughly screens and interviews all of our RNs and LVNs. All the domestic 
+                workers we employ are Certified by the State of California as a Certified Caregiver and have 
+                been fingerprinted and background checked.</p>
+        </div>
+        <img class="domesticimg" src="Resources/HomeImages/SubSections/clientpic.png">
+
+    </section>
+
+    <section class="map">
+        <h3 class="midtext">Serving seniors, mentally and physically disabled clients throughout LA county</h3>
+            <div class="buttonandmap">
+                <div class="ziplookup">
+                    <input class="PagePromo-input" type="text" id="zipEntry" name="zipEntry" pattern="[0-9]{5}" placeholder="Zip or Postal Code">
+                    <input type="submit" onclick="zipcode()" class="ziplookupbotton" value="Find Care">
+                    <script src="Resources/JS/zipcode.js"></script>
+                </div>
+            <img class="mapimg" src="Resources/HomeImages/SubSections/LACounty.png">
+        </div>
+    </section>
+
+    <section class="servsection">
+
+        <h2 class="servtitle">Our Services</h2>
+
+            <div class="servicesblock servblockone">
+                <h3 class="servicesh3">Primary Activities of <br> Daily Living</h3>
+                <div class="servrow2">
+                    
+                    <ul class="servlist servlist1">
+                        <li>Dressing</li>
+                        <li>Meals</li>
+                        <li>Kitchen Upkeep</li>
+                        <li>Transferring</li>
+                        <li>Bathing</li>
+                        <li>Toiletting</li>
+                    </ul>
+                    <img class="servsubpic" src="Resources/HomeImages/SubSections/servicessubside2.png">
+                </div>
+            </div>
+
+            <div class="servicesblock servblocktwo">
+                <h3 class="servicesh3">Instrumental Activites of <br> Daily Living</h3>
+                <div class="servrow2">
+                    <ul class="servlist servlist2">
+                        <li>Medication Reminders</li>
+                        <li>Light Housekeeping</li>
+                        <li>Laundry</li>
+                        <li>Cognitive Stimulation</li>
+                        <li>Assistance with hobbies</li>
+                        <li>Everyday Transportation</li>
+                    </ul>
+                    <img class="servsubpic" src="Resources/HomeImages/SubSections/Servicessubside1.png">
+                </div>
+            </div>
+
+    </section>
+
+    <section class="faqsection">
+        <div class="faqtext">
+            <h2>Frequently asked questions:</h2>
+            <div class="domesticrect"></div>
+        </div>
+        <div class="accordionparent">
+            <button class="accordion">Nullam placerat justo orci, nec feugiat dui sollicitudin ac
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="panel">
+            <p>Fusce non tristique arcu, non volutpat enim. Ut luctus dolor tincidunt ex imperdiet, a suscipit 
+                lectus condimentum. Mauris lorem augue, laoreet a congue eu, pharetra vitae sapien. In pellentesque 
+                blandit mi a ornare. Fusce eros mi, pulvinar eu libero eu, maximus pharetra ex.</p></div>
+            <button class="accordion">Maecenas augue nisi
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="panel">
+            <p>Ut fringilla metus sed justo venenatis, id laoreet dui mollis. Sed malesuada faucibus velit, laoreet 
+                faucibus augue tempus sed. Vivamus auctor, turpis vel accumsan auctor, nisl nisl viverra arcu, 
+                ac eleifend erat tortor nec est. 
+            </p>
+            </div>
+            <button class="accordion">Maecenas molestie rhoncus
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mi felis, semper a dapibus vel, cursus ac magna. Integer 
+                vel lacus urna. Aenean rhoncus felis leo, eu hendrerit ante tincidunt ac.</p>
+            </div>
+            <button class="accordion">Maecenas molestie rhoncus
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mi felis, semper a dapibus vel, cursus ac magna. Integer 
+                vel lacus urna. Aenean rhoncus felis leo, eu hendrerit ante tincidunt ac.</p>
+            </div>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+                
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+                });
+             }
+        </script>
+    </section>
+
+
+</body>
+
+<footer>
+    <div class="footercontents">
+        <div class="footercompanyinfo">
+            <img class="footerlogo" src="Resources/Logos/cfrlogo.png">
+            <div class="footeraddress">
+                <p>585 S. Fairfax Ave.</p>
+                <p>Los Angeles, CA</p>
+                <p>90036</p>
+            </div>
+            <p class="allrights">
+                ©2024 Care First Registry. All rights reserved.
+            </p>
+        </div>
+        <div class="footervarities">
+            <ul class="footerlist">
+                <a><li>Menu 1</li></a>
+                <a><li>Menu 2</li></a>
+                <a><li>Menu 3</li></a>
+            </ul>
+        </div>
+
+    </div>
+
+</footer>
+
+
+</html>
+
