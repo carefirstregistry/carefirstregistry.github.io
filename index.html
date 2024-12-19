@@ -15,17 +15,50 @@
 </head>
 
 <header>
-    <a class="linklogo" href="index.html"><img alt="cfrlogo" src="Resources/Logos/cfrlogo.png"></a>
-    <div class="menuright">
-        <ul class="menulist">
-            <a href="index.html"><li>Home</li></a>
-            <li>Menu 2</li>
-            <li>Menu 3</li>
-            <li>Menu 4</li>
-            <li>Menu 5</li>
-        </ul>
-        <a href="tel:000-000-0000"><button class="callbutton menucall">Call us!</button></a>
+    <div class="menu desktop">
+        <a class="linklogo" href="index.html"><img alt="cfrlogo" src="Resources/Logos/cfrlogo.png"></a>
+        <div class="menuright">
+            <ul class="menulist">
+                <a href="index.html"><li>Home</li></a>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+                <li>Menu 4</li>
+                <li>Menu 5</li>
+            </ul>
+            <a href="tel:000-000-0000"><button class="callbutton menucall">Call us!</button></a>
+        </div>
     </div>
+    <div class="menu tablet-mobile">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars fa-xl" style="pointer-events: none;" ></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html"><li>Home</li></a>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+                <li>Menu 4</li>
+                <li>Menu 5</li>
+            </div>
+          </div>
+          <a class="logoa" href="index.html"><img alt="carefirst logo" class="linklogo tablet-mobile" src="Resources/Logos/cfrlogo.png"/></a>
+          <a class="topphone" href="tel:323-937-3022"><i class="fa-solid fa-phone-volume fa-lg greenphone"></i></a>
+    </div>
+    <script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
 </header>
 
 <body>
@@ -63,12 +96,13 @@
     <section class="map">
         <h3 class="midtext">Serving seniors, mentally and physically disabled clients throughout LA county</h3>
             <div class="buttonandmap">
+                <img class="mapimg mobile" src="Resources/HomeImages/SubSections/LACounty.png">
                 <div class="ziplookup">
                     <input class="PagePromo-input" type="text" id="zipEntry" name="zipEntry" pattern="[0-9]{5}" placeholder="Zip or Postal Code">
                     <input type="submit" onclick="zipcode()" class="ziplookupbotton" value="Find Care">
                     <script src="Resources/JS/zipcode.js"></script>
                 </div>
-            <img class="mapimg" src="Resources/HomeImages/SubSections/LACounty.png">
+            <img class="mapimg tabletdesktop" src="Resources/HomeImages/SubSections/LACounty.png">
         </div>
     </section>
 
@@ -91,6 +125,8 @@
                     <img class="servsubpic" src="Resources/HomeImages/SubSections/servicessubside2.png">
                 </div>
             </div>
+
+            <img class="servmidpic mobile" src="Resources/HomeImages/SubSections/Servicessubmid.png">
 
             <div class="servicesblock servblocktwo">
                 <h3 class="servicesh3">Instrumental Activites of <br> Daily Living</h3>

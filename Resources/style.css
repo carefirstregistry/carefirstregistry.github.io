@@ -9,12 +9,15 @@ body{
 p, h1, h2, h3, ul{
     margin-block-start: 0;
     margin-block-end: 0;
+    padding-inline-start: 0;
 }
 
 p{
     font-size: 1.2rem;
     line-height: 1.5;
 }
+
+
 
 header{
     display: flex;
@@ -31,6 +34,12 @@ header{
 
 .linklogo img{
     width: 100%;
+}
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .menuright{
@@ -58,6 +67,47 @@ header{
     color: #df4040;
 }
 
+.dropbtn {
+    border:none;
+    cursor:pointer;
+    padding:12px 16px;
+    background-color:#fff
+    }
+    
+    .dropdown {
+    position:relative;
+    display:inline-block;
+    display: flex;
+    }
+
+    .fa-phone-volume{
+        color:green
+    }
+    
+    .dropdown-content {
+    display:none;
+    position:absolute;
+    background-color:#fff;
+    min-width:160px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index:1
+    }
+    
+    .dropdown-content a {
+    color:#110807;
+    padding:12px 16px;
+    text-decoration:none;
+    display:block
+    }
+    
+    .dropdown-content a:hover {
+    background-color:#faccc7
+    }
+
+    .dropdown-conten a:active {
+        background-color:#faccc7
+      }
+
 .callbutton{
     width: 11%;
     padding: .5rem;
@@ -79,6 +129,12 @@ header{
     width: 100%;
     padding: .5rem 1rem;
     font-size: 1.1rem;
+}
+
+.logoa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .jumbotron{
@@ -490,4 +546,209 @@ footer li{
 .allrights{
     margin: .5rem 0;
     font-size: .8rem;
+}
+
+@media only screen and (min-width: 1025px) {
+    .tablet-mobile {
+    display:none
+    }
+}
+
+@media only screen and (min-width: 480px){
+
+    .mobile{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .menu{
+        display: flex;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 1.6rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .linklogo{
+        width: 35%;
+    }
+
+    .tabletdesktop{
+        display: none;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .jumbotron{
+        background-position-x: center;
+        background-position-y: -2rem;
+    }
+
+    .jumbocall{
+        width: 45%;
+        padding: .75rem .5rem;
+    }
+
+    .jumbotrontext{
+        width: 85%;
+    }
+
+    .jumbotrontext h2 {
+        font-size: 2.2rem;
+    }
+
+    .servheart{
+        margin: 1.5rem 0;
+        width: 30%;
+    }   
+
+    .descrip{
+        width: 85%;
+    }
+
+    .descripcall{
+        width: 50%;
+        font-size: 1.1rem;
+    }
+    
+    .domesticworkers{
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .domesticrect{
+        margin: 2rem auto;
+    }
+
+    .domesticimg{
+        display:none;
+    }
+    
+    .domestictext{
+        width: 75%;
+        text-align: center;
+    }
+
+    .midtext{
+        font-size:1.4rem;
+    }
+
+    .map{
+        width: 81%;
+    }
+
+    .mapimg{
+        width: 85%;
+        margin: 2rem 0;
+    }
+
+    .buttonandmap{
+        padding: 0;
+    }
+
+    .PagePromo-input{
+        font-size: .9rem;
+    }
+
+    .ziplookupbotton {
+        font-size: .9rem;
+    }
+    
+    .servsection{
+        flex-direction: column;
+        border:none;
+    }
+
+    .servicesblock{
+        width: 100%;
+        border-radius: 95px;
+        border: 2px solid #df4040;
+    }
+
+    .servtitle{
+        position:relative;
+        padding: .75rem 0;
+        width: 100%;
+        margin: auto;
+        border-radius: 10px;
+        text-align: center;
+        margin: 0 auto 3rem;
+    }
+
+    .servblockone{
+        border-radius: 95px;
+    }
+
+    .servmidpic{
+        width: 70%;
+        margin: 2.5rem auto;
+        border-radius: 50px;
+    }
+
+    .servicesblock h3{
+        font-size: 1.4rem;
+        padding: 2rem 0;
+        width: 100%;
+    }
+
+    .servsubpic{
+        display: none;
+    }
+
+    .faqsection {
+        flex-direction:column;
+        max-width:100%;
+        align-items:center;
+        margin:7rem auto
+    }
+        
+    .faqtext {
+    text-align:center
+    }
+        
+
+    .footerlogo{
+    width:75%;
+    }
+
+    .footercontents{
+    margin: 5rem auto;
+    }
+
+    .footeraddress{
+        padding: 0;
+    }
+    
+    .footeraddress p {
+    font-size:1.1rem;
+    }
+
+    .allrights {
+        padding-top:0;
+        }
+    
+    .socialbuttons-desktop {
+    display:none
+    }
+    
+    .footercontents {
+    display:flex;
+    flex-direction:column
+    }
+   
+    footer ul{
+        margin-top: .5rem;
+    }
+   
 }
