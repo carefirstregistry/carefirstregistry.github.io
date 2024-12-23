@@ -83,6 +83,12 @@ header{
     .fa-phone-volume{
         color:green
     }
+
+
+    .fa-lg {
+        line-height: 0;
+        vertical-align: 0;
+    }
     
     .dropdown-content {
     display:none;
@@ -435,7 +441,7 @@ h1{
 }
 
 .faqsection {
-    max-width: 70%;
+    width: 70%;
     margin: 11rem auto 9rem;
     display: flex;
     justify-content: space-between;
@@ -552,12 +558,201 @@ footer li{
     .tablet-mobile {
     display:none
     }
-}
-
-@media only screen and (min-width: 480px){
 
     .mobile{
         display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .jumbotrontext {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) and (orientation:portrait){
+
+    .jumbotrontext {
+        width: 60%;
+    }
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) and (orientation:landscape){
+
+    .jumbotron{
+        background-position: top;
+        height: 74vh;
+    }
+
+    .jumboplaceholder{
+        width: 10%;
+    }
+
+    .jumbotrontext{
+        width: 60%;
+    }
+
+    .jumbocall{
+        font-size: 1.4rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) and (orientation:portrait){
+
+    .jumbotron{
+        background-position: center;
+        height: 54vh;
+    }
+
+    .jumboplaceholder{
+        width: 0%;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 900px) and (orientation:landscape){
+
+    .jumbotron{
+        background-position: top;
+        height: 74vh;
+    }
+
+    .jumbotrontext h2{
+        font-size: 2.5rem;
+    }
+
+    .jumboplaceholder{
+        width: 10%;
+    }
+
+    .jumbotrontext{
+        width: 50%;
+    }
+
+    .jumbocall{
+        padding: .75rem 0;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 900px){
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .menu{
+        align-items: center;
+    }
+
+    .linklogo{
+        width: 16%;
+    }
+
+
+
+    .jumbocall{
+        padding: 1rem 0;
+    }
+
+    .descrip{
+        width: 80%;
+    }
+
+    .servheart{
+        width: 16%;
+    }
+
+    .domestictext{
+        width: 85%;
+        text-align: center;
+    }
+
+    .domesticrect{
+        width: 60px;
+        margin: 2rem auto;
+    }
+
+    .domesticworkers{
+        justify-content: space-evenly;
+        width: 85%;
+        align-items: center;
+    }
+
+    .domestictext{
+        width: 60%;
+        text-align: left;
+    }
+
+    .domesticrect{
+        width: 60px;
+        margin: 2rem 0;
+    }
+
+    .map{
+        width: 85%;
+    }
+
+    .mapimg{
+        width: 40%;
+    }
+
+    .servsection{
+        flex-direction: column;
+        border: none;
+    }
+
+    .servicesblock{
+        border-radius: 95px;
+        border: 2px solid #df4040;
+    }
+
+    .servicesblock h3{
+        font-size: 1.9rem;
+    }
+
+    .servtitle{
+        font-size: 2.5rem;
+        border-radius: 20px;
+        padding: .75rem 4rem;
+    }
+
+    .servblockone{
+        margin: 4rem auto;
+    }
+
+    .servtitle{
+        position: relative;
+        margin: auto;
+    }
+
+    .servicesblock{
+        width: 100%;
+    }
+
+    .faqsection{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footercontents{
+        justify-items: center;
     }
 
 }
@@ -708,7 +903,7 @@ footer li{
 
     .faqsection {
         flex-direction:column;
-        max-width:100%;
+        width:100%;
         align-items:center;
         margin:7rem auto
     }
