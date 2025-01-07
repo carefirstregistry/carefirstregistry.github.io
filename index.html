@@ -15,50 +15,18 @@
 </head>
 
 <header>
-    <div class="menu desktop">
+    <div class="menu tabletdesktop">
+        <div class="menuleft"></div>
         <a class="linklogo" href="index.html"><img alt="cfrlogo" src="Resources/Logos/cfrlogo.png"></a>
         <div class="menuright">
-            <ul class="menulist">
-                <a href="index.html"><li>Home</li></a>
-                <li>Menu 2</li>
-                <li>Menu 3</li>
-                <li>Menu 4</li>
-                <li>Menu 5</li>
-            </ul>
-            <a href="tel:000-000-0000"><button class="callbutton menucall">Call us!</button></a>
+            <a href="tel:000-000-0000"><button class="callbutton menucall desktop">Call us!</button></a>
+            <a class="topphone tablet-mobile" href="tel:323-937-3022"><i class="fa-solid fa-phone-volume fa-xl greenphone"></i></a>
         </div>
     </div>
-    <div class="menu tablet-mobile">
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars fa-xl" style="pointer-events: none;" ></i></button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="index.html"><li>Home</li></a>
-                <li>Menu 2</li>
-                <li>Menu 3</li>
-                <li>Menu 4</li>
-                <li>Menu 5</li>
-            </div>
-          </div>
-          <a class="logoa" href="index.html"><img alt="carefirst logo" class="linklogo tablet-mobile" src="Resources/Logos/cfrlogo.png"/></a>
-          <a class="topphone" href="tel:323-937-3022"><i class="fa-solid fa-phone-volume fa-lg greenphone"></i></a>
+    <div class="menu mobile">
+          <a class="linklogo" href="index.html"><img alt="carefirst logo" class="linklogo tablet-mobile" src="Resources/Logos/cfrlogo.png"/></a>
+          <a class="topphone menuright" href="tel:323-937-3022"><i class="fa-solid fa-phone-volume fa-lg greenphone"></i></a>
     </div>
-    <script>
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-    </script>
 </header>
 
 <body>
@@ -93,25 +61,58 @@
 
     </section>
 
-    <section class="map">
-        <h3 class="midtext">Serving seniors, mentally and physically disabled clients throughout LA county</h3>
-            <div class="buttonandmap">
-                <img class="mapimg mobile" src="Resources/HomeImages/SubSections/LACounty.png">
-                <div class="ziplookup">
-                    <input class="PagePromo-input" type="text" id="zipEntry" name="zipEntry" pattern="[0-9]{5}" placeholder="Zip or Postal Code">
-                    <input type="submit" onclick="zipcode()" class="ziplookupbotton" value="Find Care">
-                    <script src="Resources/JS/zipcode.js"></script>
+    <section class="services">
+
+    <section class="nurses">
+
+            <h2>Our Services</h2>
+
+            <div class="nursegement">
+
+                <div class="nursesblock nursesleft">
+              
+                    <div class="nurserow">
+                        <h3 class="nursesh3">Registured Nurse (RN)</h3>
+                        <ul class="nurselist">
+                            <li>Total patient assessments and interventions</li>
+                            <li>Administer medication</li>
+                            <li>Start IV and maintain ordered IV meds/hydration</li>
+                            <li>Place and maintain Foley catheters and G-tubes, trach & vent care, wound care and colostomy</li>
+                        </ul>
+                    </div>
+               
+                </div>           
+
+            <img class="nursesubpic" src="Resources/HomeImages/SubSections/nurses1.png">
+            </div>
+            <img class="nursemidpic mobile" src="Resources/HomeImages/SubSections/nurses1.png">
+            <div class="nursegement">
+                <img class="nursesubpic" src="Resources/HomeImages/SubSections/nurses2.png">
+            <div class="nursesblock nursesright">
+                <div class="nurserow">
+                    <h3 class="nursesh3">Licensed Vocational Nurse (LVN)</h3>
+                    <ul class="nurselist">
+                        <li>Patient education</li>
+                        <li>Administer medication</li>
+                        <li>Monitor and provide intervention</li>
+                        <li>Monitor, care for and maintain Foley catheters, trachs, vents, G-tubes, blood draws and other external to internal devices, wound care and colostomy.</li>
+                    </ul>
                 </div>
-            <img class="mapimg desktop" src="Resources/HomeImages/SubSections/LACounty.png">
+            </div>
         </div>
     </section>
 
-    <section class="servsection">
 
-        <h2 class="servtitle">Our Services</h2>
+
+
+    <section class="servsection">        
+
+        <h2 class="servtitle">Caregiver / Certified Nurse Assistance (CNA)</h2>
+        
+        <div class="wholeblock">
 
             <div class="servicesblock servblockone">
-                <h3 class="servicesh3">Primary Activities of <br class="desktop"> Daily Living</h3>
+                <h3 class="servicesh3">Primary Activities of Daily Living</h3>
                 <div class="servrow2">
                     
                     <ul class="servlist servlist1">
@@ -129,7 +130,7 @@
             <img class="servmidpic mobile" src="Resources/HomeImages/SubSections/Servicessubmid.png">
 
             <div class="servicesblock servblocktwo">
-                <h3 class="servicesh3">Instrumental Activites of <br class="desktop"> Daily Living</h3>
+                <h3 class="servicesh3">Instrumental Activites of Daily Living</h3>
                 <div class="servrow2">
                     <ul class="servlist servlist2">
                         <li>Medication Reminders</li>
@@ -143,7 +144,18 @@
                 </div>
             </div>
 
+        </div>
+
     </section>
+
+    </section>
+
+    <section class="map">
+        <h3 class="midtext">Serving seniors, mentally and physically disabled clients throughout LA county</h3>
+            <img class="mapimg desktop" src="Resources/HomeImages/SubSections/LACounty.png">
+        </div>
+    </section>
+
 
     <section class="faqsection">
         <div class="faqtext">
@@ -205,25 +217,12 @@
 
 <footer>
     <div class="footercontents">
-        <div class="footercompanyinfo">
-            <img class="footerlogo" src="Resources/Logos/cfrlogo.png">
-            <div class="footeraddress">
-                <p>585 S. Fairfax Ave.</p>
-                <p>Los Angeles, CA</p>
-                <p>90036</p>
-            </div>
             <p class="allrights">
                 ©2024 Care First Registry. All rights reserved.
             </p>
-        </div>
-        <div class="footervarities">
-            <ul class="footerlist">
-                <a><li>Menu 1</li></a>
-                <a><li>Menu 2</li></a>
-                <a><li>Menu 3</li></a>
-            </ul>
-        </div>
-
+            <h5>
+                585 S. Fairfax Ave, Los Angeles, CA, 90036
+            </h5>
     </div>
 
 </footer>

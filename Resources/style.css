@@ -6,10 +6,14 @@ body{
     margin:0;
 }
 
-p, h1, h2, h3, ul{
+p, h1, h2, h3, h5, ul{
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
+}
+
+h5{
+    font-size: .8rem;
 }
 
 p{
@@ -23,13 +27,14 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(249, 249, 249));
     filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.274));
     padding: 1.2rem;
+    position:sticky;
 }
 
 .linklogo{
-    width: 10%;
+    width: 29%;
 }
 
 .linklogo img{
@@ -37,34 +42,20 @@ header{
 }
 
 .menu{
-    display:flex;
+    display:grid;
+    grid-template-areas: 'menuleft linklogo menuright';
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     width: 90%;
+    justify-items: center;
+    align-items: center;
 }
 
 .menuright{
     width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
-}
-
-.menulist{
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding-inline-start: 0;
-    width: 75%;
-    font-size: 1.1rem;
-}
-
-.menulist a{
-    text-decoration: none;
-    color: black;
-}
-
-.menulist a:hover{
-    color: #df4040;
 }
 
 .dropbtn {
@@ -133,7 +124,7 @@ header{
 
 .menucall{
     width: 100%;
-    padding: .5rem 1rem;
+    padding: .65rem 2rem;
     font-size: 1.1rem;
 }
 
@@ -153,7 +144,7 @@ header{
 }
 
 .jumbotrontext{
-    width: 31%;
+    width: 35%;
 }
 
 .jumbotrontext h2{
@@ -240,14 +231,86 @@ h1{
     width: 50%;
 }
 
-.map{
-    margin: 10rem auto;
-    border-bottom: 2px solid #f9b8b6;
-    border-top: 2px solid #f9b8b6;
-    width: 65%;
-    padding: 3rem 0;
-    background: radial-gradient(closest-corner, #f7f7f7, #FFF);
+.services{
+    width: 85%;
+    border-radius: 50px;
+    margin: auto;
+}
 
+.nurses{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nursesblock{
+    display: flex;
+    width: 90%;
+    padding: 2rem;
+    margin: 3rem 0;
+}
+
+.nurselist li{
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+.nursesright{
+
+    background-color: #f760601d;
+}
+
+.nursesleft{
+    background-color: #4444440f;
+}
+
+.nursegement{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nurselist{
+    width: 85%;
+}
+
+.nursesblock{
+    border: 1px solid #f76060;
+    border-radius: 25px;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.015));
+    width: 55%;
+}
+
+.nursesblock h3{
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    color: #df4040;
+}
+
+.nurserow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nursesubpic{
+    width: 17%;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.015));
+}
+
+.nurses h2{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.nursesrect{
+    height: 5px;
+    width: 100px;
+    background-color: #f9b8b6;
+    margin: 2rem 0;
 }
 
 .midsection{
@@ -263,17 +326,32 @@ h1{
     width: 100%;
 }
 
-.midtext{
-    text-align: center;
-    font-size: 1.6rem;
-    margin: auto;
-    padding-bottom: 2rem;
+.map{
+    margin: 12rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #f9b8b6;
+    border-top: 2px solid #f9b8b6;
+    width: 60%;
+    padding: 1.5rem 0;
+    border-radius: 40px;
+    background-image: url('../Resources/Logos/hearticonbg.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .mapimg{
-    width: 45%;
+    width: 35%;
     border-radius: 15px;
     filter:drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.015));
+}
+
+.midtext{
+    text-align: center;
+    font-size: 2rem;
+    width: 55%;
+    color:#df4040;
 }
 
 .clientimg{
@@ -331,27 +409,37 @@ h1{
 
 .servsection{
     display: flex;
-    width: 90%;
-    align-items: flex-start;
+    flex-direction: column;
+    width: 85%;
+    align-items: center;
     justify-content: center;
-    border: 3px solid #df4040;
-    border-radius: 100px;
-    margin: 12rem auto;
+    border-top: none;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin: 3rem auto 0 auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 70%;
-    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.043));
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.063));
+}
+
+.wholeblock{
+    display: flex;
+    border: 1px solid #df4040;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 
 .servtitle{
     font-size: 1.8rem;
-    position: absolute;
-    z-index: 10;
-    margin-top: 1rem;
-    padding: .75rem 3rem;
-    background-color: #df4040;
-    color: white;
-    border-radius: 50px;
+    width: 99.85%;
+    padding: 2rem 0;
+    color: #df4040;
+    border: 1px solid #df4040;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom: none;
+    text-align: center;
 }
 
 .servheart{
@@ -374,19 +462,13 @@ h1{
     padding-inline-start: 1rem;
 }
 
-
-.servicesh3{
-    color: #df4040;
-}
-
 .servblocks{
     display: flex;
 }
 
 .servblockone{
-    border-top-left-radius: 95px;
     border-bottom-left-radius: 95px;
-    background-color: #f4828238;
+    background-color: #f760601d;
 }
 
 .servsubpic{
@@ -396,8 +478,9 @@ h1{
 
 
 .servblocktwo{
-    border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
+    background-color: #4444440f;;
+    border-left: 1px solid #df4040;
 }
 
 .servicesblock{
@@ -503,56 +586,22 @@ h1{
 
 footer{
     border-top: 1px solid #f9b8b6;
+    padding: 1.25rem 0 1.25rem 0;
 }
-
-
 
 .footercontents{
-    display: grid ;
-    margin: 2rem auto;
-    grid-template-areas: 'footercompanyinfo footervarities footerhelplinks';
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     width: 75%;
     align-items: start;
-}
-
-.footercompanyinfo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-footer ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    align-items: flex-start;
-    line-height: 2.4rem;
-}
-
-footer li{
-    font-size: 1.15rem;
-    margin: .25rem 0;
-}
-
-.footerlist a:hover{
-    color: #df4040;
-    cursor: pointer;
-}
-
-.footerlogo{
-    width: 50%;
-    margin-bottom: 1rem;
-}
-
-.footeraddress{
-    margin: .5rem 0;
+    margin: auto;
 }
 
 .allrights{
-    margin: .5rem 0;
     font-size: .8rem;
 }
+
+
 
 @media only screen and (min-width: 1025px) {
     .tablet-mobile {
@@ -563,13 +612,6 @@ footer li{
         display: none;
     }
     
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .jumbotrontext {
-        width: 50%;
-    }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1024px) and (orientation:portrait){
@@ -656,15 +698,26 @@ footer li{
         display: none;
     }
 
+    header{
+        padding: .75rem;
+    }
+
     .menu{
         align-items: center;
     }
 
-    .linklogo{
-        width: 16%;
+    .menuright{
+        width: 51%;
+    }
+
+    .menucall{
+        font-size: .9rem;
     }
 
 
+    .linklogo {
+        width: 44%;
+    }
 
     .jumbocall{
         padding: 1rem 0;
@@ -712,6 +765,12 @@ footer li{
         width: 40%;
     }
 
+    .nursesubpic{
+        width: 25%;
+        border-radius: 85px;
+    }
+
+
     .servsection{
         flex-direction: column;
         border: none;
@@ -727,18 +786,19 @@ footer li{
     }
 
     .servtitle{
-        font-size: 2.5rem;
-        border-radius: 20px;
+        font-size: 2rem;
         padding: .75rem 4rem;
+        border: none;
+        width: 75.85%;
+    }
+
+    .wholeblock{
+        flex-direction: column;
+        border: none;
     }
 
     .servblockone{
         margin: 4rem auto;
-    }
-
-    .servtitle{
-        position: relative;
-        margin: auto;
     }
 
     .servicesblock{
@@ -773,7 +833,7 @@ footer li{
     }
 
     .linklogo{
-        width: 35%;
+        width: 32%;
     }
 
     .tabletdesktop{
@@ -836,7 +896,8 @@ footer li{
     }
 
     .midtext{
-        font-size:1.4rem;
+        font-size:1.3rem;
+        width: 93%;
     }
 
     .map{
@@ -879,6 +940,8 @@ footer li{
         border-radius: 10px;
         text-align: center;
         margin: 0 auto 3rem;
+        border: none;
+        font-size: 1.5rem;
     }
 
     .servblockone{
@@ -894,7 +957,35 @@ footer li{
     .servicesblock h3{
         font-size: 1.4rem;
         padding: 2rem 0;
-        width: 100%;
+        width: 77%;
+    }
+
+    .nursesblock{
+        width: 75%;
+    }
+
+    .nursesblock h3{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .nursesubpic{
+        display: none;
+    }
+
+    .nursemidpic{
+        width: 60%;
+        margin: 2.5rem auto;
+        border-radius: 50px;
+    }
+
+    .services{
+        width: 95%;
+    }
+
+    .wholeblock{
+        flex-direction: column;
+        border:none;
     }
 
     .servsubpic{
@@ -930,8 +1021,8 @@ footer li{
     }
 
     .allrights {
-        padding-top:0;
-        }
+        padding-bottom: .3rem;
+    }
     
     .socialbuttons-desktop {
     display:none
@@ -939,7 +1030,9 @@ footer li{
     
     .footercontents {
     display:flex;
-    flex-direction:column
+    flex-direction:column;
+    margin: auto;
+    align-items: center;
     }
    
     footer ul{
