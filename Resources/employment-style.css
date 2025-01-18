@@ -121,13 +121,14 @@ label{
     align-items: center;
     justify-content: center;
     margin: 0 auto 12rem auto;
+    width: 80%;
 }
 
 .agencybenefits{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 53%;
+    width: 63%;
 }
 
 .phonebenefits img{
@@ -146,7 +147,7 @@ label{
     border-radius: 50px;
     background-color: white;
     border: 1px solid #3b9ade;
-    width: 100%;
+    width: 75%;
 }
 
 .benefitstext h3{
@@ -171,13 +172,13 @@ label{
     display:flex;
     flex-direction: column;
     align-items: center;
-    width: 58%;
+    width: 49%;
     padding: 2rem 0;
     background-color: #f9b8b6;
     border-radius: 50px;
     position:relative;
     bottom: 3.5rem;
-    right: 4rem;
+    right: 3rem;
 }
 
 .centerschedule a{
@@ -189,7 +190,7 @@ label{
 
 .centerschedule h3{
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-bottom: 2rem;
 }
 
@@ -254,7 +255,7 @@ label{
     }
 
     .agencybenefits{
-        width:85%;
+        width:67%;
     }
 
     .employmentbutton{
