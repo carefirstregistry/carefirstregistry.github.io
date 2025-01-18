@@ -1,0 +1,328 @@
+.jumbotron{
+    background-image: url('../Resources/HomeImages/Jumbotron/employmentjumbotron.png');
+}
+
+.requirements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem auto 12rem auto;
+}
+
+.regrqmnts{
+    width: 50%;
+    background-color: #ddeefd;
+    padding: 3rem 1rem 3rem 0;
+    border-radius: 50px;
+}
+
+.regrqmnts h3{
+    text-align: center;
+    font-size: 1.75rem;
+    padding-bottom: 2rem;
+}
+
+.regpoints{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.regpoints ul{
+    line-height: 2.3rem;
+    list-style-image: url('../Resources/HomeImages/Icons/checkmark.png');
+}
+
+.regpoints li{
+    font-size: 1.2rem;
+    padding-left: .3rem;
+}
+
+.requirements img{
+    border-radius: 50px;
+    width: 30%;
+    position: relative;
+    left: -2.5rem;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.039));
+}
+
+.callbenefits{
+    display: flex;
+    align-items: center;
+}
+
+.contactsect{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.employmentform{
+    border: 1px solid #3b9ade;
+    display:flex;
+    padding: 0 2rem;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-image: url('../Resources/Logos/HeartIconTransparent.png');
+    background-repeat: no-repeat;
+    background-position-y: 12rem;
+    background-position-x: -1.65rem;
+    margin-bottom: 8rem;
+}
+
+.employmentform h3{
+    font-size: 1.75rem;
+    padding: 2rem 2rem;
+    background-color: #3b9ade;
+    color: white;
+    width:100%;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.015));
+}
+
+label{
+    font-size: 1.1rem;
+    color: #173d59;
+}
+
+.formrow{
+    display:flex;  
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.finput{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.adcomments{
+    width: 100%;
+}
+
+.submit{
+    margin: 1rem 0 2rem 0;
+    font-size: 1.1rem;
+    width: 20%;
+}
+
+.phonebenefits{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12rem auto;
+}
+
+.agencybenefits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 53%;
+}
+
+.phonebenefits img{
+    width: 24%;
+    border-radius: 25px;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.039));
+    margin-right: 3rem;
+}
+
+.benefitstext{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fdb4b4;
+    padding: 2rem;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid #3b9ade;
+    width: 100%;
+}
+
+.benefitstext h3{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+}
+
+.benefitstext ul{
+    line-height: 2rem;
+    list-style: none;
+}
+
+.benefitstext li{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.centerschedule{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 58%;
+    padding: 2rem 0;
+    background-color: #f9b8b6;
+    border-radius: 50px;
+    position:relative;
+    bottom: 3.5rem;
+    right: 4rem;
+}
+
+.centerschedule a{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerschedule h3{
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+
+.schedcall{
+    width: 30%;
+    font-size: 1.2rem;
+    background-color: #df4040;
+    color: white;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.039));
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    .mobiletablet{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .desktop {
+        display:none;
+    }
+
+    .requirements img{
+        display: none;
+    }
+
+    .centerschedule{
+        right: 0;
+        margin: 0 auto 8rem auto;
+    
+    }
+
+    .phonebenefits img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+
+    .jumbotrontext{
+        width: 58%;
+    }
+
+    .jumbocall{
+        width: 40%;
+    }
+
+    .regrqmnts{
+        width: 85%;
+        padding: 3rem 1rem 3rem 1rem;
+    }
+
+    .regpoints li{
+        font-size: 1.1rem;
+    }
+
+    .centerschedule{
+        width: 45%;
+    }
+
+    .agencybenefits{
+        width:85%;
+    }
+
+    .employmentbutton{
+        font-size: .8rem;
+    }
+
+}
+
+@media only screen and (min-width: 480px){
+    .mobile{
+        display:none;
+    }
+
+   
+}
+
+@media only screen and (max-width: 480px){
+
+    .tabletdesktop{
+        display: none;
+    }
+
+    .regpoints{
+        flex-direction: column;
+    }
+
+    .requirements{
+        flex-direction: column;
+    }
+ 
+    .regrqmnts{
+        width: 75%;
+        padding: 3rem 2.3rem 3rem 2.3rem;
+    }
+
+    .regpoints li{
+        font-size: 1.1rem;
+    }
+
+    .centerschedule{
+        width: 80%;
+    }
+
+    .agencybenefits{
+        width: 95%;
+        flex-direction: column-reverse;
+    }
+
+    .employmentform{
+        padding: 0;
+        background-position: center;
+    }
+
+    .employmentform h3{
+        padding: 2rem 0; 
+    }
+
+    .formrow{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .finput{
+        width: 65%;
+    }
+
+    .adcomments{
+        width: 65%;
+    }
+
+}
