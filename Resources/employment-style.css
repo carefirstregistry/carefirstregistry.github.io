@@ -119,7 +119,7 @@ label{
 .phonebenefits{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0 auto 12rem auto;
     width: 80%;
 }
@@ -132,7 +132,7 @@ label{
 }
 
 .phonebenefits img{
-    width: 24%;
+    width: 22%;
     border-radius: 25px;
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.039));
     margin-right: 3rem;
@@ -145,9 +145,9 @@ label{
     background-color: #fdb4b4;
     padding: 2rem;
     border-radius: 50px;
-    background-color: white;
+    background-color: #cbcbcb0f;
     border: 1px solid #3b9ade;
-    width: 75%;
+    width: 58%;
 }
 
 .benefitstext h3{
@@ -172,7 +172,7 @@ label{
     display:flex;
     flex-direction: column;
     align-items: center;
-    width: 49%;
+    width: 38%;
     padding: 2rem 0;
     background-color: #f9b8b6;
     border-radius: 50px;
