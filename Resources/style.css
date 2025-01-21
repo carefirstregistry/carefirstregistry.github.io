@@ -1120,4 +1120,16 @@ footer{
     }
    
     footer ul{
-       
+        margin-top: .5rem;
+    }
+   
+}
+
+/** Colors:
+
+Reds 
+Saturated: #df4040
+
+Blues
+Saturated: #3b9ade
+Light: #ddeefd
