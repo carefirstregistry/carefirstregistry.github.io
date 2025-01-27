@@ -425,6 +425,8 @@ h1{
 
 .wellnesstext li{
     font-size: 1.3rem;
+    font-weight: 1000;
+
 }
 
 .map{
@@ -869,6 +871,13 @@ footer{
         margin: 2rem 0;
     }
 
+    .wellnesstext{
+        width: 65%;
+        padding-left: 3.5rem;
+    }
+
+
+
     .map{
         width: 90%;
         justify-content: center;
@@ -881,6 +890,7 @@ footer{
     .mapimg{
         width: 40%;
     }
+
 
     .nursesubpic{
         width: 25%;
@@ -950,7 +960,7 @@ footer{
     }
 
     p{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .linklogo{
@@ -1020,6 +1030,38 @@ footer{
         text-align: center;
     }
 
+    .wellnesstext{
+        padding-left: 2rem;
+        width: 75%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wellnesstext ul{
+        text-align: left;
+        padding: 0;
+    }
+
+    .wellnesstext p{
+        padding-bottom: 1.5rem;
+    }
+
+    .wellnesscontent{
+        flex-direction: column;
+    }
+
+    .wellnesscontent img {
+        left: 0;
+        margin-bottom: 3rem;
+        width: 65%;
+    }
+
+    .wellnesses{
+        flex-direction: column;
+    }
+
     .maptext{
         font-size:1.8rem;
         width: 96%;
@@ -1030,7 +1072,6 @@ footer{
     }
 
     .mapcall{
-        width: 36%;
         font-size: 1.5rem;
     }
 
