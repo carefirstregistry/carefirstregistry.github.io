@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="Resources/style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/0152939bbc.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="android-chrome" sizes="192x192" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -21,8 +22,16 @@
 <header>
     <div class="menu tabletdesktop">
         <div class="menuleft">
-            <a href="employment.html"><button class="employmentbutton"><i class="fa-solid fa-lg fa-arrow-left"></i>Looking for employment?</button></a>
-            
+            <div class="dropdown">
+                <button href="index.html" class="menubutton carebutton">Care Services<i class="fa-solid fa-chevron-down fa-xs"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Domestic Referral Agency</a>
+                    <a href="#">Caregiver Registry</a>
+                    <a href="#">Nurse's Registry</a>
+                    <a href="#">Wellness Programs</a>
+                </div>
+            </div>
+            <a href="employment.html" class="menubutton ">Employment</a>
         </div>
         <a class="linklogo" href="index.html"><img alt="carefirst logo" src="Resources/Logos/cfrlogo.png"></a>
         <div class="menuright">
